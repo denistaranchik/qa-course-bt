@@ -14,6 +14,20 @@ public class Main {
 
             if (count <= 0) {
                 System.out.println("The number must be higher than zero!");
+            }  else {
+
+                int firstNumber = 0;
+                int secondNumber = 1;
+
+                System.out.println("Here you are:");
+
+                for (int i = 1; i <= count; i++) {
+                    System.out.println(firstNumber + " ");
+
+                    int nextNumber = firstNumber + secondNumber;
+                    firstNumber = secondNumber;
+                    secondNumber = nextNumber;
+                }
             }
 
         } else {
