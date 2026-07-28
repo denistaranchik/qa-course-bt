@@ -6,14 +6,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("How many Fibonacci numbers to generate? Please, enter a number: ");
+        System.out.print("Please, enter a number for Fibonacci generation: ");
 
         if (scanner.hasNextInt()) {
 
         int count = scanner.nextInt();
 
             if (count <= 0) {
-                System.out.println("The number must be higher than zero!");
+                System.out.println("The number must be positive");
             }  else {
 
                 int firstNumber = 0;
@@ -22,7 +22,7 @@ public class Main {
                 System.out.println("Here you are:");
 
                 for (int i = 1; i <= count; i++) {
-                    System.out.println(firstNumber + " ");
+                    System.out.print(firstNumber + " ");
 
                     int nextNumber = firstNumber + secondNumber;
                     firstNumber = secondNumber;
