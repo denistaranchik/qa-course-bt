@@ -7,5 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("How many Fibonacci numbers to generate? Please, enter a number: ");
+
+        int count = scanner.nextInt();
     }
 }
