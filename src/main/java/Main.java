@@ -14,7 +14,6 @@ public class Main {
 
             if (count <= 0) {
                 System.out.println("The number must be higher than zero!");
-                System.out.println("The number must be higher than zerrooooo!");
             }  else {
 
                 int firstNumber = 0;
