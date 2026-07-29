@@ -13,7 +13,7 @@ public class Main {
         int count = scanner.nextInt();
 
             if (count <= 0) {
-                System.out.println("The number must be higher than zerrooooo!");
+                System.out.println("The number must be higher than zero!");
             }  else {
 
                 int firstNumber = 0;
