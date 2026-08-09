@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -8,28 +9,18 @@ public class Main {
 
         System.out.print("Please, enter a number for Fibonacci generation: ");
 
-        if (scanner.hasNextInt()) {
+        if (FibonacciGenerator.inputChecker(scanner)) {
 
-        int count = scanner.nextInt();
+            int count = scanner.nextInt();
 
             if (count <= 0) {
                 System.out.println("The number must be higher than zero!");
-            }  else {
-
-                int firstNumber = 0;
-                int secondNumber = 1;
-
-                System.out.println("Here you are:");
-
-                for (int i = 1; i <= count; i++) {
-                    System.out.print(firstNumber + " ");
-
-                    int nextNumber = firstNumber + secondNumber;
-                    firstNumber = secondNumber;
-                    secondNumber = nextNumber;
+            } else {
+                List<Integer> result = FibonacciGenerator.generateFibonacciSequence(count);
+                for (int number : result) {
+                    System.out.print(number + " ");
                 }
             }
-
         } else {
             System.out.println("Entered data is not valid!");
         }
