@@ -2,7 +2,7 @@
 
 Description:
 
-This program generates a Fibonacci sequence based on the number entered by the user. The program asks the user to enter how many Fibonacci numbers should be generated.
+This program generates a Fibonacci sequence and tests it based on the number entered by the user. The program asks the user to enter how many Fibonacci numbers should be generated.
 
 Example:
 
