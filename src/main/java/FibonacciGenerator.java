@@ -1,9 +1,15 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class FibonacciGenerator {
 
+    protected int number;
+
+
     public static List<Integer> generateFibonacciSequence(int count) {
+
+
 
         List<Integer> result = new ArrayList<>();
 
@@ -19,5 +25,9 @@ public class FibonacciGenerator {
 
         }
         return result;
+    }
+
+    public static boolean inputChecker(Scanner scanner) {
+        return scanner.hasNextInt();
     }
 }

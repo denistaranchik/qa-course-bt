@@ -9,7 +9,7 @@ public class Main {
 
         System.out.print("Please, enter a number for Fibonacci generation: ");
 
-        if (scanner.hasNextInt()) {
+        if (FibonacciGenerator.inputChecker(scanner)) {
 
             int count = scanner.nextInt();
 
